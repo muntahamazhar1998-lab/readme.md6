@@ -1,0 +1,48 @@
+# Learning Objectives
+Insert key-value pairs: 
+Added new records using unique keys to model fast keyed storage in a hash-based structure.
+
+Retrieve values efficiently: 
+Looked up existing keys directly and used safe lookup checks or .get() so missing keys did not cause unexpected crashes.
+
+Update existing values: 
+Modified values for existing keys in place (such as updating stock counts or order statuses) rather than creating duplicate entries.
+
+Remove entries: 
+Deleted existing records cleanly and tested removal behavior on missing or empty entries.
+
+Understand hashing concepts:
+Connected key hashing, slot/bucket indexing, collision handling, and load factor behavior to real-world lookup speed.
+
+Requirements
+Create and populate a dictionary: 
+Built and populated a Python dictionary representing a real-world scenario with meaningful keys and values.
+
+Demonstrate lookup operations: 
+Tested retrieving values for valid keys as well as keys that were not present.
+
+Demonstrate update operations: 
+Updated existing key-value pairs and verified how duplicate-key updates overwrote or merged values.
+
+Demonstrate delete operations: 
+Removed keys from the dictionary and handled attempts to delete absent keys safely.
+
+Test edge cases: 
+Checked empty dictionaries, non-existent keys, empty/boundary inputs, and repeated operations during execution.
+
+Create a real-world scenario:
+Modeled a practical application (such as an online inventory or order lookup system) to demonstrate how hash tables work in practice.
+
+Discussion Board Reflection
+Completing this assignment deepened my understanding of how Python dictionaries apply 
+hash table principles to perform fast key-value insertions, lookups, updates, and deletions. 
+Designing a realistic scenario and testing edge cases—such as empty dictionaries, missing keys,
+and overwriting existing entries—helped clarify how defensive checks keep programs reliable. 
+One challenge was ensuring that edge-case handling and documentation stayed clear and consistent
+across both the code comments and README.md; I overcame this by running targeted test cases for 
+invalid or missing lookups and writing past-tense notes documenting what I implemented and 
+verified. In general, a hash table converts a key via a hash function to locate storage slots
+quickly, avoiding full-list scans and improving lookup efficiency. Collisions occur when 
+different keys hash to the same slot, which can slow operations if slots fill up or cluster. 
+By using well-distributed keys, safe lookup/deletion methods, and resizing when needed, hash 
+tables help applications stay fast and responsive as data grows.
